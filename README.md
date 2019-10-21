@@ -2,13 +2,30 @@
 Simple Django Rest + React auth app
 
 How to make it work:
- 1. Make sure you have python and nodejs installed in you system
- 2. Install pipenv
+1. Make sure you have python and nodejs installed in you system
+2. Go to the projects directory and install pipenv
   ```
    pip3 install pipenv
    
   ```
-  3. Install django
+3. Run pipenv shell to create a virtual environment
   ```
-    pipenv istall django djangorestframework django-rest-knox
+   pipenv shell
+  ```
+4. Install django, django rest and django knox
+  ```
+    pipenv install django==2.1 djangorestframework django-rest-knox
+```
+5. Change directory to  authApp folder and start the server
+```
+python manage.py runserver
+```
+6. Open another terminal and change to the project directory
+7. install all dependencies 
+```
+	npm install
+```
+8. Open the app
+```
+	npm run dev
 ```
